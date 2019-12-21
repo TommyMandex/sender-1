@@ -18,15 +18,15 @@ use SwiftMailer\Smtp\Email;
 echo shell_exec("sh function/screen.sh");
 
 /////////////////////////////////////////////////////////////////////////////////////
-$kintil = "\033[1;31m           ❱❱ Error Gayn ! Jangan Dikosongi GBLK\n";
-$kintl = "\033[1;31m           ❱❱ Error Gayn ! Tolol Ea Kannn\n";
+$kintil = "\033[1;31m           ❱❱ Chỉ nhập đc số thôi =) sai r \n";
+$kintl = "\033[1;31m           ❱❱ vui lòng nhập\n";
 /////////////////////////////////////////////////////////////////////////////////////////////
-$maxs = readline("           [+] Sekali Send Berapa List : ");
+$maxs = readline("           [+] mỗi thằng gửi bao nhiêu mails?  : ");
 if (empty($maxs)) { echo $kintil; die(); }
 if (filter_var($maxs, FILTER_VALIDATE_INT)) {} else { echo $kintl; die(); }
-$gens = readline("           [+] Mau Generate SMTP User [y/n] : ");
+$gens = readline("           [+] Tự động tạo user? [y/n] : ");
 if ($gens == 'y') {
-    $doms = readline("           [+] Domain SMTP Kau Apah : ");
+    $doms = readline("           [+] Tên domain (SMTP_) : ");
     if (empty($doms)) { echo $kintil; die(); }
     $ujml = readline("           [+] Mau Generate Berapa User : ");
     if (empty($ujml)) { echo $kintil; die(); } else {
@@ -42,8 +42,8 @@ if ($gens == 'y') {
             fputs($fp1, "$user@$doms\n");
         }
     }
-    $udah = readline("           [+] Udah Upload CSV ? Udah... Udah... [y/n]  : ");
-    if ($udah == 'n') { echo 'Upload dulu CSV nya GBLK'."\n"; die(); }
+    $udah = readline("           [+] Upload user lên xong chưa? CSV ? hmm... hmm... [y/n]  : ");
+    if ($udah == 'n') { echo '>< ngu ngốk'."\n"; die(); }
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
