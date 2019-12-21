@@ -53,7 +53,7 @@ $SMTP           = [ 'auto' => 'yes',                         // yes - Jika mengg
                     'user' => 'customer-[randstring-][number]@apple.email.com', // From Mail untuk spoofing, hiraukan jika menggunakan smtp.gmail.com
                     'pass' => '11111111', ];                // Pass Jangan Diganti Apabila Menggunakan Generate User
 
-$USER_MANUAL    = [ 'dreamwi1123@templater.me', ];       // Isi Jika Ingin Create User Relay Sendiri :D
+$USER_MANUAL    = [ 'admin@estatement-amazonid.net', ];       // Isi Jika Ingin Create User Relay Sendiri :D
 
 $SEND           = [ 'type' => 'bcc',                        // bcc - Untuk Mode BCC | to - Untuk Mode TO
                     'to'   => 'customer@live.com',   // Isi Jika Menggunakan Mode BCC
